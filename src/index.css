@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #141e30,
+    #243b55
+  );
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+
+  width: 85%;
+  max-width: 950px;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(10px);
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+
+  color: white;
+}
+
+.header {
+
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+
+  font-size: 40px;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+
+  color: #ffffff;
+}
+
+.form {
+
+  display: flex;
+  gap: 15px;
+
+  margin-bottom: 25px;
+
+  flex-wrap: wrap;
+}
+
+.form input {
+
+  flex: 1;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  background: rgba(255,255,255,0.2);
+
+  color: white;
+}
+
+.form input::placeholder {
+
+  color: #ddd;
+}
+
+.form button {
+
+  padding: 14px 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #00c6ff;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.form button:hover {
+
+  transform: scale(1.05);
+
+  background: #0072ff;
+}
+
+table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+}
+
+th {
+
+  background: rgba(255,255,255,0.2);
+
+  padding: 16px;
+
+  font-size: 18px;
+}
+
+td {
+
+  background: rgba(255,255,255,0.08);
+
+  padding: 16px;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+tr:hover td {
+
+  background: rgba(255,255,255,0.15);
+
+  transform: scale(1.01);
+}
+
+td input {
+
+  width: 80px;
+
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.pass {
+
+  color: #00ff95;
+
+  font-weight: bold;
+
+  text-shadow: 0 0 8px #00ff95;
+}
+
+.fail {
+
+  color: #ff4d6d;
+
+  font-weight: bold;
+
+  text-shadow: 0 0 8px #ff4d6d;
+}
+
+@media (max-width: 768px) {
+
+  .form {
+
+    flex-direction: column;
+  }
+
+  .header h1 {
+
+    font-size: 28px;
+  }
+
+}
